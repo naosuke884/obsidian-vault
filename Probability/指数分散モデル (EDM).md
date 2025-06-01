@@ -1,4 +1,6 @@
 # 指数分散モデル (EDM)
+[[自然指数族]]を拡張したもの．
+$\phi$ を固定すれば，自然指数族になる．
 
 ## 定義
 $$f(y;\theta,\phi) = a(y,\phi)\exp\Bigl(\frac{y\theta - b(\theta)}{\phi}\Bigr), \quad y\in\mathcal{Y}$$
@@ -10,7 +12,3 @@ $$f(y;\theta,\phi) = a(y,\phi)\exp\Bigl(\frac{y\theta - b(\theta)}{\phi}\Bigr), 
 ## 平均・分散
 - **平均**: $\mu = E[Y] = b'(\theta)$
 - **分散**: $\mathrm{Var}(Y) = \phi\,b''(\theta) = \phi\,V(\mu)$
-
-## 関連
-- [[指数族]]
-- [[一般化線形モデル (GLM)]]

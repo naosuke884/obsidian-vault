@@ -23,12 +23,16 @@ $$
 f_{Y}(y;\mu,\phi,p)=a(y;\phi,p)\,
 \exp\!\left\{\frac{y\theta-\kappa(\theta)}{\phi}\right\}.
 $$
-
+## ポイント
+- 分散関数が $\operatorname{Var}[Y\mid\mu]=\phi\,\mu^{p}$ となる．
+- $p$ の値によって特定の分布をとる． 
 $$
-\operatorname{Var}[Y\mid\mu]=\phi\,\mu^{p},
-\qquad
-p=0:\ \text{Normal},\;
-p=1:\ \text{Poisson},\;
-p=2:\ \text{Gamma},\;
-p=3:\ \text{Inverse Gaussian}.
+\begin{split}
+p=0&:\ \text{正規分布}\\
+p=1&:\ \text{ポアソン分布}\\
+1 < p < 2&:\ \text{混合ポアソン・ガンマ分布}\\
+p=2&:\ \text{ガンマ分布}\\
+p=3&:\ \text{逆正規分布}
+\end{split}
 $$
+$p = 1$ の時は，そのまま代入すると0で割ることになって計算できないが，$p \rightarrow 1$ の極限をとるとポアソン分布になるそう．
