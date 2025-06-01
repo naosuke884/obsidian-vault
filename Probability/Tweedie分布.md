@@ -1,17 +1,34 @@
 # Tweedie分布
 
 Tweedie分布は多種の分布を包含する指数分散モデル([[指数分散モデル (EDM)]])の一種．
-## 定義
 
-$$f(y;\mu,\phi,p) = \frac{1}{\phi} \exp\left(-\frac{y}{\phi}\right) \left(\frac{y}{\phi}\right)^{p-1} \frac{1}{\Gamma(p)}$$
-- $y \geq 0$: 非負の連続変数
-- $\mu$: 平均
-- $\phi > 0$: 分散パラメータ
-- $p$: 指数分散モデルのパラメータ
-- $\Gamma(p)$: [[ガンマ関数]]
-## 特殊ケース
-- $p=0$: [[正規分布]]
-- $p=1$: [[ポアソン分布]]
-- $1<p<2$: 複合ポアソン–ガンマ分布
-- $p=2$: [[ガンマ分布]]
-- $p=3$: [[逆ガウス分布]]
+$$
+f_{Y}(y;\mu,\phi,p)=a(y;\phi,p)\,
+\exp\!\left\{
+  \frac{1}{\phi}
+  \left[
+    \frac{y\,\mu^{1-p}}{1-p}
+    -\frac{\mu^{2-p}}{2-p}
+  \right]
+\right\},
+\qquad
+\phi>0,\; p\neq 1
+$$
+
+$$
+\theta=\frac{\mu^{1-p}}{1-p},
+\qquad
+\kappa(\theta)=\frac{\mu^{2-p}}{2-p},
+\qquad
+f_{Y}(y;\mu,\phi,p)=a(y;\phi,p)\,
+\exp\!\left\{\frac{y\theta-\kappa(\theta)}{\phi}\right\}.
+$$
+
+$$
+\operatorname{Var}[Y\mid\mu]=\phi\,\mu^{p},
+\qquad
+p=0:\ \text{Normal},\;
+p=1:\ \text{Poisson},\;
+p=2:\ \text{Gamma},\;
+p=3:\ \text{Inverse Gaussian}.
+$$
