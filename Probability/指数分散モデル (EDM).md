@@ -1,3 +1,10 @@
+---
+tags:
+  - probability
+  - edm
+  - exponential-dispersion-model
+---
+
 # 指数分散モデル (EDM)
 [[自然指数族]]を拡張したもの．
 $\phi$ を固定すれば，自然指数族になる．

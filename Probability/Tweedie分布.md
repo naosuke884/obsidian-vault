@@ -1,3 +1,10 @@
+---
+tags:
+  - probability
+  - distribution
+  - tweedie
+---
+
 # Tweedie分布
 
 Tweedie分布は多種の分布を包含する指数分散モデル([[指数分散モデル (EDM)]])の一種．

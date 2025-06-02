@@ -1,3 +1,8 @@
+---
+tags:
+  - vault
+---
+
 My name is Naoki Hayashi.
 
 I’m interested in AI and web development.

@@ -1,3 +1,9 @@
+---
+tags:
+  - calculus
+  - integral
+---
+
 # 積分の公式
 ## 基本的な積分公式
 
