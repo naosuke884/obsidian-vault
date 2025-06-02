@@ -28,6 +28,11 @@ cpio -iv < archive.cpio
 find . -depth -print | cpio -pdmv /path/to/destination
 ```
 
+### アーカイブの内容を一覧表示
+```bash
+cpio -it < archive.cpio
+```
+
 ## よく使われるオプション
 
 - `-i`: コピーインモード（抽出）
