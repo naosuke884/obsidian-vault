@@ -1,7 +1,7 @@
 ## cpio コマンド
 
 `cpio`（copy in and out）は、ファイルアーカイブを作成、抽出、一覧表示するための Unix/Linux コマンドです。
-[[tar]] と似たコマンド．
+[[tar]] や [[zip]] と似たコマンド．
 
 ## 基本的な機能
 
@@ -30,7 +30,7 @@ find . -depth -print | cpio -pdmv /path/to/destination
 
 ### アーカイブの内容を一覧表示
 ```bash
-cpio -it < archive.cpio
+cpio -tv < archive.cpio
 ```
 
 ## よく使われるオプション
@@ -53,5 +53,5 @@ cpio -it < archive.cpio
 ## tarとの違い
 
 - `cpio` は標準入力からファイルを読み取る，`tar` はファイル名を引数として受け取る。
-- `cpio` はシステムレベルのバックアップや特殊な状況でよく使用されますが、一般的なアーカイブ作成には `tar` の方が広く使われています。
 - `cpio` には，`-p` モードがある．
+- ファイルの圧縮はできない．
