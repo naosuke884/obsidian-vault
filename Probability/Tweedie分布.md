@@ -30,9 +30,14 @@ $$
 f_{Y}(y;\mu,\phi,p)=a(y;\phi,p)\,
 \exp\!\left\{\frac{y\theta-\kappa(\theta)}{\phi}\right\}.
 $$
+
+## 平均と分散
+- **平均**: $E[Y]=\mu$
+- **分散**: $\operatorname{Var}[Y\mid\mu]=\phi\,\mu^{p}$
+
 ## ポイント
 - 分散関数が $\operatorname{Var}[Y\mid\mu]=\phi\,\mu^{p}$ となる．
-- $p$ の値によって特定の分布をとる． 
+- $p$ の値によって特定の分布をとる．
 	- $p=0$: [[正規分布]]
 	- $p=1$: [[ポアソン分布]]
 	- $1 < p < 2$: [[混合ポアソン・ガンマ分布]]
