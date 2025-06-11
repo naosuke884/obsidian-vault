@@ -11,6 +11,8 @@ dpkg（Debian Package）はDebian系ディストリビューションで使用�
 - `dpkg -L <package>`: パッケージがインストールしたファイル一覧
 - `dpkg -S <file>`: ファイルが属するパッケージを検索
 - `dpkg --configure -a`: 未設定のパッケージを設定
+- `dpkg -E`, `dpkg --skip-same-version`: 同じバージョンがすでにインストールされている場合、インストールや削除をスキップ
+- `dpkg -G`, `dpkg --refuse-downgrade`: インストールするパッケージのバージョンが現在のものより古い場合、ダウングレードを拒否
 - `dpkg --help`: ヘルプの表示
 
 ## 状態ファイル

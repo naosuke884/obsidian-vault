@@ -1,1 +1,4 @@
 .obsidian/
+.mypy_cache/
+__pycache__/
+.github/
