@@ -1,6 +1,5 @@
 ---
-tags:
-  - vault
+title: Top
 ---
 
 My name is Naoki Hayashi.
